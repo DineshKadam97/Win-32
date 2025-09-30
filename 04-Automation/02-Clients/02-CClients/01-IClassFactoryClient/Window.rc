@@ -1,0 +1,3 @@
+#include "Window.h"
+
+DDK_ICON ICON DK.ico

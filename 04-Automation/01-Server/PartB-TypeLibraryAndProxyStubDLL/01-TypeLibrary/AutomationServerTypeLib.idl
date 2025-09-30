@@ -1,0 +1,45 @@
+import "unknwn.idl" ; //he #include kelyasarkh
+import "oaidl.idl";
+
+// IMyMath Interface attribute block
+[
+	object, //interface COM chya object ne implement kelay mhnun Object
+	uuid(DF4495F1-6880-45B8-B798-6B03642D8D27),// IID Of IMyMath
+	helpstring("IMyMath Interface"), //kahihi lihita yet
+	pointer_default(unique), //ya interface cha pointer unique pointer mhnun treat kela jail
+	dual, //interface dual aahe mhnje Classfactory aani Dispatch service pan donhi vaprata yeto
+	oleautomation //com ch jun naav
+]
+
+//IMyMath Definition Block
+interface IMyMath : IDispatch
+{
+	import "oaidl.idl"; //oa => ole automation
+	HRESULT SumOfTwoIntegers([in] int, [in] int, [out, retval] int*); //out => out parameter, retval => return value
+	HRESULT SubtractionOfTwoIntegers([in] int, [in] int, [out, retval] int*);
+};
+
+// Type library attribute block
+[
+	uuid(30E5D77D-9DEC-44C9-A4EC-A76E057768CD),// LIBID Of Type Library
+	version(1.0),// major version number.minor version number
+	helpstring("MyMath Component's Type Library")
+]
+
+//Definition of Type Library
+library AutomationServerTypeLib
+{
+	importlib("stdole32.tlb"); //COM chi standard type library, importlib is like #pragma
+
+	// CMyMath Co class attribute class
+	[
+		uuid(4A529D3E-9133-4840-BAB2-22B5E061EB91), // CLSID Of MyMath Component
+		helpstring("Mat Automation Component Class")
+	]
+
+	//coclass CMyMath definition
+	coclass CMyMath
+	{
+		[default] interface IMyMath;
+	};
+};
