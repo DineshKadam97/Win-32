@@ -1,0 +1,5 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\CLSID\{77EB179B-5968-40F3-9117-1F6D36456C52}]
+@="DDK_ClassFactoryDLL"
+[HKEY_CLASSES_ROOT\CLSID\{77EB179B-5968-40F3-9117-1F6D36456C52}\InprocServer32]
+@="C:\\Windows\\System32\\ClassFactoryDllServerWithRegFile.dll"

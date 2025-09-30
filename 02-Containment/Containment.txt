@@ -1,0 +1,12 @@
+Containment
+
+Containment madhye class factory aani tyachyamadhey containment aahe
+
+Aggregation => is a flavour of Aggregation (different way of doing containment)
+
+Automation => class factory + other things
+	
+		(AKA END SERVER)        (MIDDLEWARE/CONTAINER)      (AKA END CLIENT)
+Containment => (INNER DLL SERVER) ----> (OUTER DLL SERVER) -------> (EXE CLIENT) 
+		  SERVER OF OUTER  ------> SERVER OF CLIENT --------> 
+				   <-------  CLEINT OF INNER <------ CLIENT OF OUTER
