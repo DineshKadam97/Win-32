@@ -1,0 +1,10 @@
+Windows Registry Editor Version 5.00
+[HKEY_CLASSES_ROOT\CLSID\{4A895C5B-964F-41A8-BF6E-7B2C82EB7766}]
+@="DDK_AggregationOuterDllServer"
+[HKEY_CLASSES_ROOT\CLSID\{4A895C5B-964F-41A8-BF6E-7B2C82EB7766}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationOuterDllServer.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{4B691AF0-C63A-4339-964E-844AFBE816A7}]
+@="DDK_AggregationInnerServerDLL"
+[HKEY_CLASSES_ROOT\CLSID\{4B691AF0-C63A-4339-964E-844AFBE816A7}\InprocServer32]
+@="C:\\Windows\\System32\\AggregationInnerDllServer.dll"

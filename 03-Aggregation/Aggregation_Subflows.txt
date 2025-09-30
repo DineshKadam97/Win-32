@@ -1,0 +1,4 @@
+1. CoCreateInstance in end client for outer's interface.
+2. Outer Interface => QI() => OuterInterface()pIsum => QI() =>pISubtract)
+3. Outer Interface => QI() => Inner Interface(pIsubtract->QI() => pIMultiplication
+4. Inner Interface => QI() => Inner Interface(pIMultiplication->QI() => pIDivision)

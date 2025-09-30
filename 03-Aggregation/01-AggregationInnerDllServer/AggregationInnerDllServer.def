@@ -1,0 +1,4 @@
+LIBRARY AggregationInnerDllServer.dll
+EXPORTS
+      DllGetClassObject PRIVATE
+      DllCanUnloadNow PRIVATE

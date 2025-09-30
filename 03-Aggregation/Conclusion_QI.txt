@@ -1,0 +1,3 @@
+Kuthlya interface pointer var call ahe?
+to interface nemak kuthun yetoy? IUknown ki IUnkown_NoAggregation
+jya interface madhey function call aahe tyala outer madhey implement kelay aahe ki inner dll madhey?
